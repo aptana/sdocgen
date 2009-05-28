@@ -1,0 +1,13 @@
+Currently, this directory contains files that were used as sanity tests when
+sdocgen was first being developed. Eventually, these will be turned into
+full-blown unit tests, but for they can at least serve as examples of the
+supported sdoc syntax. The scripts provided here are very minimal (no error
+checking, for example). An example of how you might use them follows:
+
+prompt> create_xml.sh ConstructorSample.dg > constructor.xml
+prompt> create_docs constructor.xml
+
+This will process the ConstructorSample.dg file and generate an XML file from
+it. The XML is then processed into HTML documents which will be contained
+within a constructor.xml_docs folder.
+

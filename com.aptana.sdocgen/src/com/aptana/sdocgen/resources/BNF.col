@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+	This file Copyright (c) 2005-2009 Aptana, Inc. This program is
+	dual-licensed under both the Aptana Public License and the GNU General
+	Public license. You may elect to use one or the other of these licenses.
+	
+	This program is distributed in the hope that it will be useful, but
+	AS-IS and WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE, TITLE, or
+	NONINFRINGEMENT. Redistribution, except as permitted by whichever of
+	the GPL or APL you select, is prohibited.
+	
+	1. For the GPL license (GPL), you can redistribute and/or modify this
+	program under the terms of the GNU General Public License,
+	Version 3, as published by the Free Software Foundation.  You should
+	have received a copy of the GNU General Public License, Version 3 along
+	with this program; if not, write to the Free Software Foundation, Inc., 51
+	Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.
+	
+	Aptana provides a special exception to allow redistribution of this file
+	with certain Eclipse Public Licensed code and certain additional terms
+	pursuant to Section 7 of the GPL. You may view the exception and these
+	terms on the web at http://www.aptana.com/legal/gpl/.
+	
+	2. For the Aptana Public License (APL), this program and the
+	accompanying materials are made available under the terms of the APL
+	v1.0 which accompanies this distribution, and is available at
+	http://www.aptana.com/legal/apl/.
+	
+	You may view the GPL, Aptana's exception and additional terms, and the
+	APL in the file titled license.html at the root of the corresponding
+	plugin containing this source file.
+	
+	Any modifications to this file must keep this entire header intact.
+-->
+
+<colorizer
+	xmlns="http://www.aptana.com/2007/colorizer/1.0"
+	background="rgb(255,255,255)"
+	caret-color="rgb(0,0,0)"
+	folding-background="rgb(240,240,240)"
+	folding-foreground="rgb(139,139,139)"
+	language="text/bnf"
+	line-highlight="rgb(232,242,254)" 
+	selection-background="rgb(181,213,255)"
+	selection-foreground="rgb(0,0,0)">
+
+	<category name="ERROR" style="ERROR"/>
+	<category name="OPERATOR" style="OPERATOR"/>
+	<category name="IDENTIFIER" style="IDENTIFIER">
+		<token style="IDENTIFIER_TERMINAL" type="TERMINAL"/>
+		<token style="IDENTIFIER_ALIAS" type="ALIAS"/>
+		<token style="IDENTIFIER_NONTERMINAL" type="NONTERMINAL"/>
+		<token style="IDENTIFIER_NAME" type="NAME"/>
+	</category>
+	<category name="PUNCTUATOR" style="PUNCTUATOR"/>
+	<category name="WHITESPACE" style="WHITESPACE">
+		<token style="WHITESPACE_COMMENT" type="COMMENT"/>
+	</category>
+
+	<style foreground="rgb(255,0,0)" id="ERROR"/>
+	<style font-weight="bold" foreground="rgb(0,128,255)" id="OPERATOR"/>
+	<style foreground="rgb(0,0,0)" id="IDENTIFIER"/>
+	<style foreground="rgb(0,128,0)" id="IDENTIFIER_TERMINAL"/>
+	<style foreground="rgb(129,0,126)" id="IDENTIFIER_ALIAS"/>
+	<style foreground="rgb(0,0,255)" id="IDENTIFIER_NONTERMINAL"/>
+	<style foreground="rgb(128,0,0)" id="IDENTIFIER_NAME"/>
+	<style font-weight="bold" foreground="rgb(0,0,0)" id="PUNCTUATOR"/>
+	<style foreground="rgb(0,0,0)" id="WHITESPACE"/>
+	<style foreground="rgb(128,128,128)" id="WHITESPACE_COMMENT"/>
+
+</colorizer>

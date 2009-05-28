@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Class-Path: com.aptana.ide.parsing.jar com.aptana.parsing.adapter.jar org.json.jar
+Created-By: Kevin Lindsey
+Main-Class: com.aptana.sdocgen.SDocGenCreator
