@@ -1,6 +1,6 @@
 Currently, this directory contains files that were used as sanity tests when
 sdocgen was first being developed. Eventually, these will be turned into
-full-blown unit tests, but for they can at least serve as examples of the
+full-blown unit tests, but for now they can at least serve as examples of the
 supported sdoc syntax. The scripts provided here are very minimal (no error
 checking, for example). An example of how you might use them follows:
 
